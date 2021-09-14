@@ -1,8 +1,11 @@
-use crate::{coordinate::Coordinate, vector::Vector};
+use vek::Vec2;
+#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
+// Some constants:
+// FOV will be 66 degrees.
 
-#[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub struct Player {
-    position: Coordinate,
-    camera_vector: Vector,
+    position: Vec2<f64>,
+    camera_vector: Vec2<f64>,
+    plane: Vec2<f64>,
     health: u8,
 }
