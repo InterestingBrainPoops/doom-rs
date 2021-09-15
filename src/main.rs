@@ -2,7 +2,6 @@ mod level;
 mod player;
 mod state;
 mod triangle;
-mod vector;
 
 extern crate serde;
 #[macro_use]
